@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Lam Vu</title>
+    <style>
+        body {
+            font-family: 'Noto Sans', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Helvetica, Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            padding-right: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9em;
+        }
+
+        h2 {
+            border-left: 5px solid #2c3e50;
+            padding-left: 10px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #444;
+        }
+
+        .job-title {
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skills-category {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .achievement {
+            font-style: italic;
+            color: #27ae60;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+                font-family: 'Noto Sans', Arial, sans-serif !important;
+                -webkit-print-color-adjust: exact;
+                /* Giữ màu sắc và định dạng */
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            * {
+                text-shadow: none !important;
+                box-shadow: none !important;
+            }
+        }
+
+
+        .header {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="header-avatar">
+                    <img src="./avatar.jpg" style="width: 180px;
+    border-radius: 50%;
+    height: 180px;
+    object-fit: cover;">
+                </div>
+                <div class="header-info">
+                    <div>
+                        <h1>Lâm Vũ</h1>
+                        <p style="font-size: 1.2em; color: #7f8c8d;">Frontend Developer</p>
+                    </div>
+                    <div class="contact-info">
+                        <p>Phone: +(84) 374 885 769</p>
+                        <p>Email: lamvuvu43@gmail.com</p>
+                        <p>Location: Can Tho, Vietnam</p>
+                        <p><a href="https://www.linkedin.com/in/vu-lam-888965126/">LinkedIn Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Frontend Developer with strong experience in building React core architecture, defining code conventions,
+                and developing reusable hooks and components. Primarily focused on Frontend while maintaining a
+                solid fullstack background.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <span class="skills-category">Frontend</span>
+                    React.js, Vue.js, TypeScript, Nuxt.js, Next.js, TanStack Query, Redux, Vuex, Pinia.
+                </div>
+                <div>
+                    <span class="skills-category">Backend & Others</span>
+                    PHP, Laravel, Symfony, MySQL, Firebase, Socket IO, Agile Scrum.
+                </div>
+                <div>
+                    <span class="skills-category">Architecture</span>
+                    React Core Structure, API Service Layer, Code Conventions & Best Practices.
+                </div>
+                <div>
+                    <span class="skills-category">DevOps (Basic)</span>
+                    Linux,
+                    Kubernetes (Pods, ReplicaSets, Deployments - Minikube).
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>CYLLENGE ASIA PACIFIC (formerly INNOCHEE)</span>
+                    <span>May 2025 - Present</span>
+                </div>
+                <div class="job-title">Frontend Developer</div>
+                <ul>
+                    <li>Built a React core foundation used across multiple features.</li>
+                    <li>Defined project structure and code conventions to ensure consistency and scalability.
+                    </li>
+                    <li>Implemented a class-based service layer to standardize API calls and error handling.
+                    </li>
+                    <li>Developed reusable core hooks: <code>useSearch</code>, and API hooks using TanStack Query.</li>
+                    <li>Built common and complex components (Tables, Card, Modals, Tree folder).</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>INNOCHEE JSC</span>
+                    <span>Jul 2023 - May 2025</span>
+                </div>
+                <div class="job-title">Frontend Developer (Fullstack Background)</div>
+                <ul>
+                    <li>Developed SEO-friendly applications using Nuxt.js, focusing on SSR, Middleware, and State
+                        Management.</li>
+                    <li>Collaborated with team leaders and PMs to gather requirements and plan tasks.</li>
+                    <p class="achievement">Achievement: Improved project scalability by optimizing reusable code
+                        components.</p>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>LEANEO</span>
+                    <span>Dec 2022 - June 2023</span>
+                </div>
+                <div class="job-title">Fullstack Developer</div>
+                <ul>
+                    <li>Designed and implemented RESTful APIs, integrating with frontend systems.</li>
+                    <li>Migrated projects from Vue 2 to Vue 3, ensuring modernized codebases.</li>
+                    <p class="achievement">Achievement: Enhanced system performance by implementing efficient state
+                        management in Vue.js.</p>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>INNOCHEE JSC</span>
+                    <span>Jul 2020 - Dec 2022</span>
+                </div>
+                <div class="job-title">Fullstack Developer</div>
+                <ul>
+                    <li>Built web applications using Laravel and Vue.js in a microservices architecture.</li>
+                    <p class="achievement">Achievement: Successfully implemented rollback mechanisms in microservices
+                        environments.</p>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="job-header">
+                <span>Can Tho University</span>
+                <span>2015 - 2019</span>
+            </div>
+            <div>Major: Information Technology | GPA: 2.7/4</div>
+            <ul>
+                <li><strong>Motel Search Website:</strong> Built with Google Maps API integration.</li>
+                <li><strong>Chatbot Integration:</strong> Developed for customer support regarding prices and
+                    availability.</li>
+                <li><strong>Data Scraper:</strong> Automated data collection exporting to CSV.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
